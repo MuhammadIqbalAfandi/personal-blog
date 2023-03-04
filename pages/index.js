@@ -22,10 +22,10 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          [ Hi ✌, I'm Muhammad Iqbal Afandi, a Laravel Programmer with over two
-          years of experience in web application development. I'm also
-          proficient in programming languages such as C#, JavaScript,
-          TypeScript, and front-end framework React Vue. ]
+          [ Hi ✌, a Laravel Programmer with over two years of experience in web
+          application development. I'm also proficient in programming languages
+          such as C#, JavaScript, TypeScript, and front-end framework React Vue.
+          ]
         </p>
         <p>
           I have experience in building web applications from scratch, including
