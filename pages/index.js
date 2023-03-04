@@ -21,10 +21,20 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          [ Hi ✌, I'm Muhammad Iqbal Afandi, a Laravel Programmer with over two
+          years of experience in web application development. I'm also
+          proficient in programming languages such as C#, JavaScript,
+          TypeScript, and front-end framework React Vue. ]
+        </p>
+        <p>
+          I have experience in building web applications from scratch, including
+          database design and development, API creation, front-end framework
+          utilization, and integration with third-party services.
+        </p>
+        <p>
+          Thank you for reading my brief profile, and I'd be happy to discuss
+          with you further about how I can help your project.
         </p>
       </section>
 
