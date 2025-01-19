@@ -1,17 +1,17 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Date from '../components/date'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
+import Head from 'next/head';
+import Link from 'next/link';
+import Date from '../components/date';
+import Layout, { siteTitle } from '../components/layout';
+import utilStyles from '../styles/utils.module.css';
+import { getSortedPostsData } from '../lib/posts';
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = getSortedPostsData();
   return {
     props: {
       allPostsData,
     },
-  }
+  };
 }
 
 export default function Home({ allPostsData }) {
@@ -20,12 +20,12 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section className={(utilStyles.headingMd, utilStyles.darkText)}>
         <p>
-          [ Hi ✌, a Laravel Programmer with over two years of experience in web
-          application development. I'm also proficient in programming languages
-          such as C#, JavaScript, TypeScript, and front-end framework React Vue.
-          ]
+          [ Hi ✌, a JavaScript/TypeScript Programmer with over two years of
+          experience in web application development. I'm also proficient in
+          programming languages such as C#, and front-end framework NestJs,
+          Nextjs. ]
         </p>
         <p>
           I have experience in building web applications from scratch, including
@@ -39,7 +39,7 @@ export default function Home({ allPostsData }) {
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={(utilStyles.headingLg, utilStyles.darkText)}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -53,5 +53,5 @@ export default function Home({ allPostsData }) {
         </ul>
       </section>
     </Layout>
-  )
+  );
 }
